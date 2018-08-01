@@ -9,7 +9,7 @@ class Solution {
             for (int i = 1; i < nums.length ; i++){
                 if (nums[i] != nums[i - 1]){            //如果陣列的當前元素與上一個不同
                     nums[count] = nums[i];              //陣列中的索引值取當前紀錄的長度，令該索引值內的元素等於當前的元素
-                    count++;                            //不同數字的陣列長度+1
+                    count++;                            //不同數字+1
                 }
             }
             return count;                               //把最後算到有幾個不同數字的值回傳
